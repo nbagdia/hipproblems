@@ -1,0 +1,87 @@
+.user-msg, .server-msg, .server-error {
+    max-width: 50%;
+    padding: 25px;
+    clear: both;
+    font-size: 16px;
+}
+
+.user-msg {
+    color: #000;
+    float: right;
+    background: #fff;
+    flex: 1;
+    margin-right: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.server-msg, .server-error {
+    color: #fff;
+    margin-left: 5%;
+    float: left;
+}
+
+.server-error {
+    background: #d9534f;
+    font-family: monospace;
+}
+
+.server-msg {
+    background: #3394de;
+}
+
+
+.message-layout, .user-layout {
+    display: flex;
+    font-family: Helvetica, sans-serif;
+    background: #f5f7fa;
+    flex-flow: column nowrap;
+    height: 100%;
+}
+
+.message-view {
+    flex: auto;
+    overflow-y: scroll;
+}
+
+.message-input {
+    flex: none;
+    flex-flow: row nowrap;
+    display: flex;
+}
+
+.user-field, .message-field {
+    padding: 16px;
+    outline: none;
+    line-height: 1.4em;
+    font-size: 16px;
+}
+
+.message-field {
+    flex-grow: 1;
+}
+
+.message-button, .user-button {
+    color: #fff;
+    background: #ff8517;
+    border: #d76d0a 1px solid;
+    font-size: 17px;
+}
+
+.message-button:active, .user-button:active {
+  background: #e56a12;
+  border-color: #af5206;
+}
+
+.user-title {
+    margin-top: 20%;
+    font-size: 20px;
+    text-align: center;
+}
+
+body, html, #content {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
