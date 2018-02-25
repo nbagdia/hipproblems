@@ -25,8 +25,8 @@ class ApiHandler(web.RequestHandler):
         
     def fetch_url(self, url):
         try:
-            r = urllib2.urlopen(url)
-            self.data.extend(json.loads(r.read())["results"])
+            resp = urllib2.urlopen(url)
+            self.data.extend(json.loads(resp.read())["results"])
         except URLError:
             #print the url which returned error
             self.write({
